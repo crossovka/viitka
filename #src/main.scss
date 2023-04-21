@@ -1,0 +1,52 @@
+/*  ---------------------------------------  */
+
+// шрифт с google fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800;900&display=swap");
+/*  -------------------  */
+
+// обнуление
+@import "null.scss";
+
+// переменные и переиспользование по bem
+// @import "vars.scss";
+
+// ограничивающие контейнеры
+@import "containers.scss";
+
+/*  -------- блоки на сайте --------------  */
+
+@import "./bloсks/header.scss";
+
+@import "./bloсks/intro.scss";
+
+@import "./bloсks/footer.scss";
+
+@import "./bloсks/content.scss";
+
+/*  --------                --------------  */
+
+html,
+body {
+	height: 100%;
+	font-family: "Roboto Slab";
+	font-size: 18px;
+	color: #000000;
+
+	background-color: rgb(249, 246, 248);
+
+	&.no-scroll {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	overflow: hidden;
+	// overflow-x: hidden;
+}
+main {
+	flex: 1 1 auto;
+	// прижал footer у низу
+}
